@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Услуги и сервисы</title>
 </head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+
+    <header class="header">
+        <button class="btn btn__menu"></button>
+        <div class="header__logo">
+            <img src="/img/Logo.svg" alt="Logo" class="logo">
+        </div>
+        
+        <div class="header__contacts"></button>
+            <button class="btn btn__phone"></button>
+            <button class="btn btn__chat"></button>
+            <button class="btn btn__profile"></button>
+        </div>
+        <div class="header__check-status">
+            <button class="btn btn__group"></button>
+            <button class="btn btn__check"></button>
+        </div>        
+    </header>
+
+    <section>
+
+        <header class="title">
+            <h1>Услуги и сервисы</h1>
+            <div class="title__check-status">
+                <div class="check-status">
+                    <i>Оставить заявку</i>
+                    <button class="btn btn__group"></button>
+                </div>
+                <div class="check-status">
+                    <i>Статус ремонта</i>
+                    <button class="btn btn__check"></button>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="slide-menu">
+                <li> <button class="slide-menu__item">Ремонтируемые бренды</button></li>
+                <li> <button class="slide-menu__item">Ремонтируемые устройства</button></li>
+                <li> <button class="slide-menu__item">Дополнительные услуги</button></li>
+                <li> <button class="slide-menu__item">Цены на услуги</button></li>
+                <li> <button class="slide-menu__item">Адреса сервисных центров</button></li>
+                <li> <button class="slide-menu__item">Специальные цены</button></li>
+                <li> <button class="slide-menu__item">Отзывы</button></li>
+            </ul>            
+        </nav>
+
+        <article class="content">
+            <div class="content__text">
+                <div class="text">
+                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                </div>
+
+                <button class="content__more">Читать далее</button>
+            </div>
+            <div class="content__photo">
+                <img src="img/IMG_3223.jpg" alt="">
+            </div>         
+        </article>
+    </section>
+    
+
 </body>
 </html>

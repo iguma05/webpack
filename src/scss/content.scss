@@ -1,0 +1,54 @@
+.content {      
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 15px;
+        letter-spacing: 0.2px;
+        width: 312px;
+    }
+    .text {
+        overflow: hidden;    
+        height: 90px;
+        margin-bottom: 15px;
+        transition: height 1s;
+    }
+    
+    &__more {
+        display: flex;
+        margin: 10px 15px;
+        color: #1B1C21; 
+        font-weight: 500; 
+        &::before {
+            float: left;
+            content: "";
+            background: url("../img/arrows.svg") no-repeat;
+            width: 10px;
+            height: 10px;
+            color: #41F6D7;
+            margin-right: 16px;
+            align-self: center;
+            transition: 1s;
+        } 
+    }
+        
+    &__photo {
+        display: flex;
+        width: 312px;
+        height: 210px;
+        img {
+            width: 312px;
+            height: 210px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        & {
+            display: flex;    
+            justify-content: space-between;
+            padding: 24px;
+        }
+        &__text {
+            padding: 0;
+        }
+    }
+}
