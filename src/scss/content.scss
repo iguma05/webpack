@@ -5,12 +5,16 @@
         padding: 10px 15px;
         letter-spacing: 0.2px;
         width: 312px;
-    }
-    .text {
-        overflow: hidden;    
-        height: 90px;
-        margin-bottom: 15px;
-        transition: height 1s;
+        .text {
+            overflow: hidden;    
+            height: 90px;
+            margin-bottom: 15px;
+            transition: height 1s;
+        }
+        .open {
+            overflow: visible;
+            height: 15em;
+        }
     }
     
     &__more {
@@ -36,6 +40,9 @@
         height: 210px;
         width: 312px;
         border: 2px solid #FFFFFF;
+        img {
+            width: 312px;
+        }
     }
 
     @media (min-width: 768px) {
@@ -47,6 +54,16 @@
         }
         &__text {
             padding: 0;
+            .text {    
+                height: 180px;
+                p {
+                    margin-bottom: 30px;
+                }
+            }
+            .open {
+                overflow: visible;
+                height: 17em;
+            }
         }
         &__photo {
             width: 360px;
@@ -54,6 +71,7 @@
             border: none;
             img {
                 border-radius: 6px;
+                width: 360px;
             }
         }
     }
@@ -65,6 +83,13 @@
         &__photo {
             width: 532px;
             height: 307px;
+            img {
+                width: 532px;
+            }
         }
     }
+}
+
+.rotate::before {
+    transform: rotate(180deg);
 }
