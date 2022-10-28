@@ -33,22 +33,38 @@
         
     &__photo {
         display: flex;
-        width: 312px;
         height: 210px;
-        img {
-            width: 312px;
-            height: 210px;
-        }
+        width: 312px;
+        border: 2px solid #FFFFFF;
     }
 
     @media (min-width: 768px) {
         & {
             display: flex;    
             justify-content: space-between;
-            padding: 24px;
+            padding: 24px 0;
+            margin: 0 24px;
         }
         &__text {
             padding: 0;
+        }
+        &__photo {
+            width: 360px;
+            height: 210px;
+            border: none;
+            img {
+                border-radius: 6px;
+            }
+        }
+    }
+    @media (min-width: 1120px) {
+        &__text {
+            width: 490px;
+            line-height: 20px;
+        }
+        &__photo {
+            width: 532px;
+            height: 307px;
         }
     }
 }

@@ -95,5 +95,11 @@
             margin: 8px;        
         }
     }
+
+    @media (min-width: 1120px) {
+        & {
+            display: none;
+        }
+    }
     
 }
