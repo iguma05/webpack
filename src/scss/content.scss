@@ -1,95 +1,95 @@
-.content {      
-    &__text {
-        font-size: 14px;
-        line-height: 18px;
-        padding: 10px 15px;
-        letter-spacing: 0.2px;
-        width: 312px;
-        .text {
-            overflow: hidden;    
-            height: 90px;
-            margin-bottom: 15px;
-            transition: height 1s;
-        }
-        .open {
-            overflow: visible;
-            height: 15em;
-        }
+.content {
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 15px;
+    letter-spacing: 0.2px;
+    width: 312px;
+    .text {
+      overflow: hidden;
+      height: 90px;
+      margin-bottom: 15px;
+      transition: height 1s;
     }
-    
-    &__more {
-        display: flex;
-        margin: 10px 15px;
-        color: #1B1C21; 
-        font-weight: 500; 
-        &::before {
-            float: left;
-            content: "";
-            background: url("../img/arrows.svg") no-repeat;
-            width: 10px;
-            height: 10px;
-            color: #41F6D7;
-            margin-right: 16px;
-            align-self: center;
-            transition: 1s;
-        } 
+    .open {
+      overflow: visible;
+      height: 15em;
     }
-        
-    &__photo {
-        display: flex;
-        height: 210px;
-        width: 312px;
-        border: 2px solid #FFFFFF;
-        img {
-            width: 312px;
-        }
-    }
+  }
 
-    @media (min-width: 768px) {
-        & {
-            display: flex;    
-            justify-content: space-between;
-            padding: 24px 0;
-            margin: 0 24px;
-        }
-        &__text {
-            padding: 0;
-            .text {    
-                height: 180px;
-                p {
-                    margin-bottom: 30px;
-                }
-            }
-            .open {
-                overflow: visible;
-                height: 17em;
-            }
-        }
-        &__photo {
-            width: 360px;
-            height: 210px;
-            border: none;
-            img {
-                border-radius: 6px;
-                width: 360px;
-            }
-        }
+  &__more {
+    display: flex;
+    margin: 10px 15px;
+    color: #1b1c21;
+    font-weight: 500;
+    &::before {
+      float: left;
+      content: '';
+      background: url('../img/arrows.svg') no-repeat;
+      width: 10px;
+      height: 10px;
+      color: #41f6d7;
+      margin-right: 16px;
+      align-self: center;
+      transition: 1s;
     }
-    @media (min-width: 1120px) {
-        &__text {
-            width: 490px;
-            line-height: 20px;
-        }
-        &__photo {
-            width: 532px;
-            height: 307px;
-            img {
-                width: 532px;
-            }
-        }
+  }
+
+  &__photo {
+    display: flex;
+    height: 210px;
+    width: 312px;
+    border: 2px solid #ffffff;
+    img {
+      width: 312px;
     }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 0;
+      margin: 0 24px;
+    }
+    &__text {
+      padding: 0;
+      .text {
+        height: 180px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+      .open {
+        overflow: visible;
+        height: 17em;
+      }
+    }
+    &__photo {
+      width: 360px;
+      height: 210px;
+      border: none;
+      img {
+        border-radius: 6px;
+        width: 360px;
+      }
+    }
+  }
+  @media (min-width: 1120px) {
+    &__text {
+      width: 490px;
+      line-height: 20px;
+    }
+    &__photo {
+      width: 532px;
+      height: 307px;
+      img {
+        width: 532px;
+      }
+    }
+  }
 }
 
 .rotate::before {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }

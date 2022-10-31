@@ -7,15 +7,11 @@ import '../scss/content.scss';
 import '../scss/brands.scss';
 import './content'
 import './brands'
-
+import './brandSlider'
+import '../scss/service.scss'
+import './serviceSlider'
+import './service'
 
 console.log('Works!');
 
 
-new Swiper('.swiper', {
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    slidesPerView: 1.3,
-});

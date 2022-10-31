@@ -1,0 +1,110 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  &__title {
+    max-width: 100%;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    text-transform: uppercase;
+    padding: 16px;
+    align-items: center;
+    max-height: 80px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  &__swiper-pagination {
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-pagination-bullet {
+    background-color: #b5b6bc;
+    width: 12px;
+    height: 12px;
+  }
+  &__items {
+    display: none;
+  }
+  
+  &__item {    
+    width: 240px;
+    height: 160px;
+    margin: 16px;
+  
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    position: relative;
+    &__title {
+      font-family: TTLakes-Bold, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 16px;
+    }
+  }
+  .btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  &__btn {
+    background-color: #fff;
+    border: 2px solid #FF3E79;
+    margin: 0;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    &::after {
+      content: "\276F";
+      width: 20px;
+      height: 20px;
+      color: #FF3E79;
+    }
+  }
+  &__more {
+    display: none;
+  }
+
+
+  @media (min-width: 768px) {
+    &__swiper {
+      display: none;
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      overflow-y: hidden;
+      height: 192px;
+      transition: 1s; 
+    }
+    &__open {
+      overflow: visible;
+      height: 400px;
+    }
+    &__item {    
+      width: 224px;
+    }
+    &__more {
+      display: flex;
+      margin: 0 30px;
+      &::before {
+        float: left;
+        content: '';
+        background: url('../img/arrows.svg') no-repeat;
+        width: 10px;
+        height: 10px;
+        color: #41f6d7;
+        margin-right: 16px;
+        align-self: center;
+        transition: 1s;
+      }
+    }
+
+  }
+  @media (min-width: 1128px) {
+    &__item {    
+      width: 240px;
+    }
+  }
+}
