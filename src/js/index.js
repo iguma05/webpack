@@ -11,6 +11,8 @@ import './brandSlider'
 import '../scss/service.scss'
 import './serviceSlider'
 import './service'
+import '../scss/prices.scss'
+import './pricesSlider'
 
 console.log('Works!');
 

@@ -1,0 +1,122 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  &__title {
+    max-width: 100%;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    text-transform: uppercase;
+    padding: 16px;
+    align-items: center;
+    max-height: 80px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; 
+  }
+  &__swiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+  }
+  &__card {
+    height: 200px;
+    width: 260px;
+    margin: 8px;
+    padding: 16px;
+  
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px; 
+    position: relative;
+    &__title {
+      font-family: TTLakes, sans-serif;
+      line-height: 24px;
+      font-weight: 200;
+      opacity: 0.5;
+    }
+  }
+  &__content {
+    margin-bottom: 16px;
+  }
+  .btn {
+    
+    width: 119px;
+    height: 32px;
+    background-color: #FF3E79;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-family: TTLakes-Bold, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after {
+      content: "\276F";
+      width: 20px;
+      height: 20px;
+      color: #FFFFFF;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    
+  }
+  &__swiper-pagination {
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-pagination-bullet {
+    background-color: #b5b6bc;
+    width: 12px;
+    height: 12px;
+  }
+  &__content {
+    display: none;
+  }
+  @media (min-width:768px) {
+    &__swiper {
+      display: none;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      margin: 0 24px;
+      
+    }
+    
+    &__item {
+      display: flex;      
+      height: 64px;
+      background-color: #FFFFFF;
+      width: 720px;
+      padding: 18px;
+      justify-content: space-between;
+      border-bottom: 1px solid #EAEAEA;
+      text-align: start;
+      align-items: center;
+      &.span {
+        flex-direction: column;
+      }
+    }
+    &__item .item__head {
+      background-color: #F8F8F8;
+    }
+    .name__service {
+      width: 50%;
+    }
+    .btn {
+      position: static;
+    }
+    &__btn {
+    }
+
+  }
+}
+
+
