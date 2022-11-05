@@ -1,6 +1,11 @@
 .brands {
   display: flex;
   flex-direction: column;
+  &::after {
+    content: "";
+    margin-top: 24px;
+    border-bottom: 1px solid  #D9FFF5;
+  }
   &__title {
     max-width: 100%;
     background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
@@ -73,7 +78,7 @@
       }
       &__open {
         overflow: visible;
-        height: 400px;
+        height: 380px;
       }
 
       &__item {
@@ -101,16 +106,20 @@
   }
   @media (min-width: 1120px) {
     .brands {
+      &__items {
+        height: 180px;
+      }
       &__item {
         width: 240px;
-        margin: 9px 18px;
+        margin: 8px 16px;
       }
+      
       &__more {
         margin: 0 40px;
       }
       &__open {
         overflow: visible;
-        min-height: 300px;
+        height: 265px;
       }
     }
   }

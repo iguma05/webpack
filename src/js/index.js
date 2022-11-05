@@ -13,6 +13,7 @@ import './serviceSlider'
 import './service'
 import '../scss/prices.scss'
 import './pricesSlider'
+import '../scss/footer.scss'
 
 console.log('Works!');
 

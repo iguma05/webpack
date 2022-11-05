@@ -1,0 +1,35 @@
+.footer {
+  font-family: 'TTLakes-Medium', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item {
+    text-align: center;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+  @media (min-width: 768px) {
+    & {
+      padding: 1.5rem;      
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 218px;
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+  @media (min-width: 1126px) {
+    &__item {
+      &:last-child {
+        width: 330px;
+      }
+    }
+    
+  }
+}
