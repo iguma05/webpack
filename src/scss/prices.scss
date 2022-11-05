@@ -3,7 +3,7 @@ $bgColor: #F8F8F8;
 .prices {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  padding: 2rem 0;
   &::after {
     content: "";
     border-bottom: 1px solid  #D9FFF5;

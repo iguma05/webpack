@@ -14,6 +14,7 @@ import './service'
 import '../scss/prices.scss'
 import './pricesSlider'
 import '../scss/footer.scss'
+import '../scss/burgerMenu.scss'
 
 console.log('Works!');
 
