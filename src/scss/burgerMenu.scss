@@ -1,13 +1,15 @@
 .asideMenu {
-  // position: absolute;
+  position: absolute;
   height: 100vh;
-  max-width: 320px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
   overflow-y: auto;
-  
-  
+  background-color: #fff;
+  transition: 0.7s;
+  left: -350px;
+
   // margin: 0 24px;
   // z-index: 999;
   &::-webkit-scrollbar {
@@ -96,27 +98,32 @@
   }
   &__footer {
     display: flex;
-    &__items {
-      padding: 0 1rem;
+    flex-direction: column;
+    padding: 0 1rem;
+    &__items {      
       display: flex; 
       width: 170px;
       justify-content: space-between;
       margin-bottom: 15px;
     }
-    &__mail {
-      
+    &__mail {      
       width: 100%;
       margin-bottom: 12px;
+      &:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+      }
     }
-    &:hover {
-      opacity: 0.7;
-      text-decoration: underline;
-    }
+    
     .phone-number {
       font-weight: bold;
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 40px;
+      &:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+      }
     }
     &__language {
       display: flex;
@@ -124,12 +131,12 @@
       margin-bottom: 32px;
       width: 30%;
       justify-content: space-between;
-      &:hover {
-        opacity: 0.5;
-        cursor: pointer;        
-      }
+      
       .language {
-        
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;        
+        }
       }
     }
   }
