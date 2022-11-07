@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <aside>
+    <aside class="sideBar">
       <div class="asideMenu">
           <header>
               <div class="asideMenu__header">
@@ -81,7 +81,8 @@
           </footer>
       </div>  
     </aside>
-    <aside class="modalPhone">
+    <aside class="sidePhone">
+      <div class="modalPhone">
         <button class="btn btn__close"></button>
         <h3 class="modalPhone__title">Заказать звонок</h3>
         <form action="POST">
@@ -90,21 +91,25 @@
         <p class="modalPhone__content">Нажимая “отправить”, вы даете согласие на <span class="modalPhone__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalPhone__content__text">политикой конфиденциальности</span></p>
         <div class="modalPhone__button">
           <button type="sudmit" class="button">Отправить</button>
-        </div>        
+        </div>
+      </div>                
     </aside>
-    <aside class="modalMessage">
-      <button class="btn btn__close"></button>
-      <h3 class="modalMessage__title">Обратная связь</h3>
-      <form action="POST">
-        <input type="text" placeholder="Имя" class="modalMessage__input"></input>
-        <input type="tel" placeholder="Телефон" class="modalMessage__input"></input>
-        <input type="email" placeholder="Электронная почта" class="modalMessage__input"></input>
-        <input type="text" placeholder="Сообщение" class="modalMessage__input"></input>
-      </form>
-      <p class="modalMessage__content">Нажимая “отправить”, вы даете согласие на <span class="modalMessage__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalMessage__content__text">политикой конфиденциальности</span></p>
-      <div class="modalMessage__button">
-        <button type="sudmit" class="button">Отправить</button>
-      </div>        
+    <aside class="sideMessage">
+      <div class="modalMessage">
+        <button class="btn btn__close"></button>
+        <h3 class="modalMessage__title">Обратная связь</h3>
+        <form action="POST">
+          <input type="text" placeholder="Имя" class="modalMessage__input"></input>
+          <input type="tel" placeholder="Телефон" class="modalMessage__input"></input>
+          <input type="email" placeholder="Электронная почта" class="modalMessage__input"></input>
+          <input type="text" placeholder="Сообщение" class="modalMessage__input"></input>
+        </form>
+        <p class="modalMessage__content">Нажимая “отправить”, вы даете согласие на <span class="modalMessage__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalMessage__content__text">политикой конфиденциальности</span></p>
+        <div class="modalMessage__button">
+          <button type="sudmit" class="button">Отправить</button>
+        </div>
+      </div>
+              
   </aside>
 
     <header class="header">

@@ -1,3 +1,11 @@
+.sideBar {
+  position: fixed;
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
 .asideMenu {
   position: absolute;
   height: 100vh;
@@ -9,9 +17,8 @@
   background-color: #fff;
   transition: 0.7s;
   left: -350px;
-
   // margin: 0 24px;
-  // z-index: 999;
+  
   &::-webkit-scrollbar {
     width: 0;
   }

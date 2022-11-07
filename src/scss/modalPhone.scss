@@ -1,14 +1,22 @@
+.sidePhone {
+  position: fixed;
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
 .modalPhone {
   position: absolute;
   right: -1000px;
   top: 0;
 
   width: 320px;
-  height: 678px;
+  height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  transition: right 0.7s;
+  transition: 0.7s;
   .btn {
     background-color: #ff3e79;
     border-radius: 50%;
