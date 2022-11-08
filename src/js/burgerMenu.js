@@ -12,7 +12,7 @@ closeBtn.addEventListener('click', ()=> {
   sideBar.style.visibility = 'hidden';
 });
 sideBar.addEventListener('click', (e)=> {
-  if(e.target !== asideMenu) {
+  if( e.target == sideBar && e.target != asideMenu) {
     asideMenu.style.left = '-350px';
     sideBar.style.visibility = 'hidden';
   }

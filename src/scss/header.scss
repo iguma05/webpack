@@ -41,6 +41,9 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__logo {

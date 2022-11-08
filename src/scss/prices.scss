@@ -67,6 +67,9 @@ $bgColor: #F8F8F8;
       height: 20px;
       color: #FFFFFF;
     }
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__btn {
     position: absolute;
@@ -87,6 +90,9 @@ $bgColor: #F8F8F8;
         margin-left: 10px;
       }
     }
+  }
+  &__swiper {
+    overflow: hidden;
   }
   &__swiper-pagination {
     display: flex;

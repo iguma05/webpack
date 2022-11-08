@@ -47,6 +47,9 @@
       height: 20px;
       color: #ff3e79;
     }
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__more {
     display: none;

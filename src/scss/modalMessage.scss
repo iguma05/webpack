@@ -28,6 +28,9 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__title {
     border-left: 4px solid #41F6D7;
@@ -82,6 +85,9 @@
         height: 20px;
         color: #FFFFFF;
       }
+    }
+    &:hover {
+      opacity: 0.5;
     }
   }
   

@@ -14,7 +14,7 @@ closeBtn.addEventListener('click', ()=> {
   sideMessage.style.visibility = 'hidden';
 });
 sideMessage.addEventListener('click', (e)=> {
-  if (e.target !== modalMessage) {    
+  if (e.target == sideMessage && e.target != modalMessage) {    
     modalMessage.style.right = '-1000px';
     sideMessage.style.visibility = 'hidden';
   }

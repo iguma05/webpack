@@ -14,7 +14,7 @@ closeBtn.addEventListener('click', ()=> {
   sidePhone.style.visibility = 'hidden';
 });
 sidePhone.addEventListener('click', (e)=> {
-  if(e.target !== modalPhone) {
+  if(e.target == sidePhone && e.target !== modalPhone) {
     modalPhone.style.right = '-1000px';
     sidePhone.style.visibility = 'hidden';
   }
