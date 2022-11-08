@@ -6,16 +6,16 @@ const phoneBtn = document.querySelectorAll('.btn__phone');
 phoneBtn.forEach(item=> {
   item.addEventListener('click', ()=> {
     sidePhone.style.visibility = 'visible';
-    modalPhone.style.right = 0;
+    modalPhone.style.right = '320px';
   });
 });
 closeBtn.addEventListener('click', ()=> {
-  modalPhone.style.right = '-1000px';
+  modalPhone.style.right = '-350px';
   sidePhone.style.visibility = 'hidden';
 });
 sidePhone.addEventListener('click', (e)=> {
   if(e.target == sidePhone && e.target !== modalPhone) {
-    modalPhone.style.right = '-1000px';
+    modalPhone.style.right = '-350px';
     sidePhone.style.visibility = 'hidden';
   }
 });

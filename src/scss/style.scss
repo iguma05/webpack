@@ -26,7 +26,13 @@ body {
   color: $text;
   max-width: 1126px;
   margin: 0 auto;
-  position: relative;
+  // position: relative;
 }
-
+.page {
+  @media (min-width: 1368px) {
+    position: absolute;
+    top: 0;
+    left: 320px;
+  }
+}
 
