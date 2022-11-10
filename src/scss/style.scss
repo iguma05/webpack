@@ -26,7 +26,11 @@ body {
   color: $text;
   max-width: 1126px;
   margin: 0 auto;
-  // position: relative;
+  
+  &.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }
 }
 .page {
   @media (min-width: 1368px) {

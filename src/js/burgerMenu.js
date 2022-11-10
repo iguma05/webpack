@@ -2,6 +2,7 @@ const sideBar = document.querySelector('.sideBar');
 const asideMenu = sideBar.querySelector('.asideMenu');
 const closeBtn = sideBar.querySelector('.btn__close');
 const menuBtn = document.querySelector('.btn__menu');
+const body = document.querySelector('body');
 
 function closeBlur (e) {
   if( e.target == sideBar && e.target != asideMenu) {
@@ -36,4 +37,4 @@ window.addEventListener('resize', (e)=> {
     closeBtn.addEventListener('click', closeMenu);
     sideBar.addEventListener('click', closeBlur);
   }
-}, true);
+});
