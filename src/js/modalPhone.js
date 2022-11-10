@@ -5,17 +5,17 @@ const phoneBtn = document.querySelectorAll('.btn__phone');
 
 phoneBtn.forEach(item=> {
   item.addEventListener('click', ()=> {
-    sidePhone.style.visibility = 'visible';
-    modalPhone.style.right = '320px';
+    sidePhone.classList.add('sidePhone_open');
+    modalPhone.classList.add('modalPhone_open');
   });
 });
 closeBtn.addEventListener('click', ()=> {
-  modalPhone.style.right = '-350px';
-  sidePhone.style.visibility = 'hidden';
+  sidePhone.classList.remove('sidePhone_open');
+  modalPhone.classList.remove('modalPhone_open');
 });
 sidePhone.addEventListener('click', (e)=> {
   if(e.target == sidePhone && e.target !== modalPhone) {
-    modalPhone.style.right = '-350px';
-    sidePhone.style.visibility = 'hidden';
+    sidePhone.classList.remove('sidePhone_open');
+    modalPhone.classList.remove('modalPhone_open');
   }
 });
