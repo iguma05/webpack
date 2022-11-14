@@ -81,29 +81,30 @@
       <div class="modalPhone">
         <button class="btn btn__close"></button>
         <h3 class="modalPhone__title">Заказать звонок</h3>
-        <form action="POST">
-          <input type="tel" placeholder="Телефон" class="modalPhone__input">
+        <form action="#" method="POST">
+          <input type="tel" placeholder="Телефон" class="modalPhone__input" required>        
+          <p class="modalPhone__content">Нажимая “отправить”, вы даете согласие на <span class="modalPhone__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalPhone__content__text">политикой конфиденциальности</span></p>
+          <div class="modalPhone__button">
+            <button type="sudmit" class="button">Отправить</button>
+          </div>
         </form>
-        <p class="modalPhone__content">Нажимая “отправить”, вы даете согласие на <span class="modalPhone__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalPhone__content__text">политикой конфиденциальности</span></p>
-        <div class="modalPhone__button">
-          <button type="sudmit" class="button">Отправить</button>
-        </div>
       </div>                
     </aside>
     <aside class="sideMessage">
       <div class="modalMessage">
         <button class="btn btn__close"></button>
         <h3 class="modalMessage__title">Обратная связь</h3>
-        <form action="POST">
-          <input type="text" placeholder="Имя" class="modalMessage__input">
-          <input type="tel" placeholder="Телефон" class="modalMessage__input">
-          <input type="email" placeholder="Электронная почта" class="modalMessage__input">
-          <input type="text" placeholder="Сообщение" class="modalMessage__input">
+        <form action="#" method="POST">
+          <input type="text" placeholder="Имя" name="name" class="modalMessage__input" required>
+          <input type="tel" placeholder="Телефон" name="phone" class="modalMessage__input" required>
+          <input type="email" placeholder="Электронная почта" name="email" class="modalMessage__input" required>
+          <textarea type="text" placeholder="Сообщение" name="message" class="modalMessage__input modalMessage__input_message" required></textarea>
+          <p class="modalMessage__content">Нажимая “отправить”, вы даете согласие на <span class="modalMessage__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalMessage__content__text">политикой конфиденциальности</span></p>
+          <div class="modalMessage__button">
+            <button type="sudmit" class="button">Отправить</button>
+          </div>
         </form>
-        <p class="modalMessage__content">Нажимая “отправить”, вы даете согласие на <span class="modalMessage__content__text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modalMessage__content__text">политикой конфиденциальности</span></p>
-        <div class="modalMessage__button">
-          <button type="sudmit" class="button">Отправить</button>
-        </div>
+        
       </div>
               
   </aside>
@@ -169,7 +170,7 @@
               очередь, советуют нас родным и близким.</p>
           </div>
 
-          <button class="content__more">Читать далее</button>
+          <button class="more content__more">Читать далее</button>
         </div>
         <div class="content__photo">
           <img src="img/IMG_3223.jpg" alt="">
@@ -267,7 +268,7 @@
           <button class="btn btn__brand"></button>
         </li>
       </ul>
-      <button class="brands__more">Показать все</button>
+      <button class="more brands__more">Показать все</button>
     </section>
 
     <section class="service">
@@ -340,12 +341,12 @@
           <button class="btn service__btn"></button>
         </li>       
       </ul>
-      <button class="service__more">Показать все</button>
+      <button class="more service__more">Показать все</button>
       
     </section>
 
     <section class="prices">
-      <h1 class="prices__title">Цены на услуги</h1>
+      <h2 class="prices__title">Цены на услуги</h2>
       <div class="prices__swiper">
         <div class="swiper-wrapper">          
           <div class="swiper-slide">
@@ -356,7 +357,7 @@
                 <p class="prices__card__content">Бесплатно</p>
                 <h3 class="prices__card__title">Срок</h3>
                 <p class="prices__card__content">30 мин</p>
-                <td><button class="btn prices__btn">Заказать</button></td> 
+                <td><button class="button prices__button">Заказать</button></td> 
             </div>                   
           </div>
           <div class="swiper-slide">
@@ -367,7 +368,7 @@
                 <p class="prices__card__content">1 000 ₽</p>
                 <h3 class="prices__card__title">Срок</h3>
                 <p class="prices__card__content">30-120 мин</p>
-                <td><button class="btn prices__btn">Заказать</button></td> 
+                <td><button class="button prices__button">Заказать</button></td> 
             </div>                   
           </div>
           <div class="swiper-slide">
@@ -378,7 +379,7 @@
                 <p class="prices__card__content">1 000 ₽</p>
                 <h3 class="prices__card__title">Срок</h3>
                 <p class="prices__card__content">30-120 мин</p>
-                <td><button class="btn prices__btn">Заказать</button></td> 
+                <td><button class="button prices__button">Заказать</button></td> 
             </div>                   
           </div>
           <div class="swiper-slide">
@@ -389,7 +390,7 @@
               <p class="prices__card__content">1 000 ₽</p>
               <h3 class="prices__card__title">Срок</h3>
               <p class="prices__card__content">30-120 мин</p>
-              <td><button class="btn prices__btn">Заказать</button></td> 
+              <td><button class="button prices__button">Заказать</button></td> 
             </div>
           </div>
           <div class="swiper-slide">
@@ -400,7 +401,7 @@
                 <p class="prices__card__content">1 000 ₽</p>
                 <h3 class="prices__card__title">Срок</h3>
                 <p class="prices__card__content">30-120 мин</p>
-                <td><button class="btn prices__btn">Заказать</button></td> 
+                <td><button class="button prices__button">Заказать</button></td> 
             </div>                   
           </div>                             
         </div>          
@@ -413,7 +414,7 @@
               <th>Ремонтные услуги</th>
               <th>Цена</th>
               <th>Срок</th>
-              <th><button class="btn prices__btn">Заказать</button></th>
+              <th><button class="button">Заказать</button></th>
             </tr>          
           </thead>
           <tbody class="prices__items">
@@ -421,37 +422,37 @@
               <td>Диагностика</td>
               <td>Бесплатно</td>
               <td>30 мин</td>
-              <td><button class="btn prices__btn">Заказать</button></td>
+              <td><button class="button">Заказать</button></td>
             </tr>
             <tr class="prices__item">
               <td>Замена дисплея</td>
               <td>1 000 ₽</td>
               <td>30-120 мин</td>
-              <td><button class="btn prices__btn">Заказать</button></td>
+              <td><button class="button">Заказать</button></td>
             </tr>
             <tr class="prices__item">
               <td>Замена полифонического динамика</td>
               <td>1 000 ₽</td>
               <td>30-120 мин</td>
-              <td><button class="btn prices__btn">Заказать</button></td>
+              <td><button class="button">Заказать</button></td>
               </tr>
             <tr class="prices__item">
               <td>Тестирование с выдачей технического заключения</td>
               <td>1 000 ₽</td>
               <td>30-120 мин</td>
-              <td><button class="btn prices__btn">Заказать</button></td>
+              <td><button class="button">Заказать</button></td>
               </tr>
             <tr class="prices__item">
               <td>Замена программного обеспечения</td>
               <td>1 000 ₽</td>
               <td>30-120 мин</td>
-              <td><button class="btn prices__btn">Заказать</button></td>
+              <td><button class="button">Заказать</button></td>
             </tr>
           </tbody>                
         </table>
       </div>
       <p class="prices__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-      <button class="prices__btn__offer">Получить коммерческое предложение</button>
+      <button class="prices__button__offer">Получить коммерческое предложение</button>
     </section>
 
     <footer class="footer">
