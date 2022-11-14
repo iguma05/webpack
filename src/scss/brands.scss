@@ -33,24 +33,7 @@
     margin: 0 16px;
     padding: 0 16px;
   }
-  .btn {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    &__brand {
-      background-color: #fff;
-      border: 2px solid #ff3e79;
-    }
-    &__brand::after {
-      content: '\276F';
-      width: 20px;
-      height: 20px;
-      color: #ff3e79;
-    }
-    &:hover {
-      opacity: 0.5;
-    }
-  }
+  
   &__more {
     display: none;
   }
@@ -91,19 +74,6 @@
       }
       &__more {
         display: flex;
-        width: 130px;
-        margin: 0 30px;
-        &::before {
-          float: left;
-          content: '';
-          background: url('../img/arrows.svg') no-repeat;
-          width: 10px;
-          height: 10px;
-          color: #41f6d7;
-          margin-right: 16px;
-          align-self: center;
-          transition: 1s;
-        }
       }
     }
   }

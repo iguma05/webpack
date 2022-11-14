@@ -17,24 +17,6 @@
     }
   }
 
-  &__more {
-    display: flex;
-    margin: 10px 15px;
-    color: #1b1c21;
-    font-weight: 500;
-    &::before {
-      float: left;
-      content: '';
-      background: url('../img/arrows.svg') no-repeat;
-      width: 10px;
-      height: 10px;
-      color: #41f6d7;
-      margin-right: 16px;
-      align-self: center;
-      transition: 1s;
-    }
-  }
-
   &__photo {
     display: flex;
     height: 210px;

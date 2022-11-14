@@ -52,14 +52,6 @@
       padding: 16px;
     }
   }
-  .btn {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    &:hover {
-      opacity: 0.5;
-    }
-  }
   &__btn {
     background-color: #fff;
     border: 2px solid #FF3E79;
@@ -99,22 +91,10 @@
     }
     &__more {
       display: flex;
-      margin: 0 30px;
-      &::before {
-        float: left;
-        content: '';
-        background: url('../img/arrows.svg') no-repeat;
-        width: 10px;
-        height: 10px;
-        color: #41f6d7;
-        margin-right: 16px;
-        align-self: center;
-        transition: 1s;
-      }
     }
 
   }
-  @media (min-width: 1128px) {
+  @media (min-width: 1368px) {
     &__item {    
       width: 240px;
     }

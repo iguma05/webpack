@@ -1,5 +1,6 @@
 import '../scss/style.scss';
 import '../scss/nullstyle.scss';
+import '../scss/buttons.scss'
 import '../scss/header.scss';
 import '../scss/title.scss';
 import '../scss/slideMenu.scss';
